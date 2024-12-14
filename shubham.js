@@ -18,4 +18,28 @@ function movePage(e, page) {
     toggleClass(e, "left-side");
     toggleClass(e.previousElementSibling, "left-side");
   }
+  function movePage(element, pageNum) {
+  // Add a class to simulate flipping animation
+  element.style.transform = `rotateY(${180 * pageNum}deg)`;
+  element.style.transition = "transform 0.6s";
+}
+
+// Adjust dynamic heights for responsiveness
+function adjustPageHeights() {
+  const pages = document.querySelectorAll(".page");
+  const viewportHeight = window.innerHeight;
+
+  pages.forEach((page) => {
+    page.style.minHeight = `${viewportHeight * 0.8}px`;
+  });
+}
+
+// Run on page load
+document.addEventListener("DOMContentLoaded", function () {
+  adjustPageHeights();
+});
+
+// Adjust on resize
+window.addEventListener("resize", adjustPageHeights);
+
 }
