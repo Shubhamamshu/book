@@ -1236,4 +1236,112 @@ p {
     width: 95%;
   }
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.motive {
+  text-align: center;
+  margin: 20px;
+}
+
+.motive h2 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.instruction {
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.page {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  width: 90%;
+  max-width: 350px;
+  min-height: 500px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.page p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+iframe {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .motive h2 {
+    font-size: 16px;
+  }
+
+  .instruction {
+    font-size: 14px;
+  }
+
+  .page {
+    min-height: 400px;
+  }
+
+  .page p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
 
